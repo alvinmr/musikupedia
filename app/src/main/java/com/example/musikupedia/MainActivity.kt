@@ -13,15 +13,16 @@ class MainActivity : AppCompatActivity() {
         val firstFragment=FirstFragment()
         val secondFragment=SecondFragment()
         val thirdFragment=ThirdFragment()
+        val profileFragment = ProfileFragment()
 
         setCurrentFragment(firstFragment)
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.home->setCurrentFragment(firstFragment)
-                R.id.person->setCurrentFragment(secondFragment)
-                R.id.settings->setCurrentFragment(thirdFragment)
-
+                R.id.search->setCurrentFragment(secondFragment)
+                R.id.library->setCurrentFragment(thirdFragment)
+                R.id.profile->setCurrentFragment(profileFragment)
             }
             true
         }
