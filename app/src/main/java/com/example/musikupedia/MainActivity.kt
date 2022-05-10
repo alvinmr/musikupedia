@@ -10,9 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val firstFragment=FirstFragment()
-        val secondFragment=SecondFragment()
-        val thirdFragment=ThirdFragment()
+        val firstFragment = FirstFragment()
+        val secondFragment = SecondFragment()
+        val thirdFragment = ThirdFragment()
         val profileFragment = ProfileFragment()
 
         setCurrentFragment(firstFragment)
