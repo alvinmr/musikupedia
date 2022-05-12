@@ -192,47 +192,87 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="0dp"
                         android:paddingRight="0dp">
-                        <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingLeft="0dp"
-                            android:text="Tugas dan Hadiah"
-                            android:textColor="#f5761A"
-                            android:textSize="15sp"/>
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="9">
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="0dp"
+                                    android:text="Bagikan Musik"
+                                    android:textColor="#f5761A"
+                                    android:textSize="15sp"/>
 
-                        <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="0dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="Tugas dan Hadiah"
-                            android:textColor="#fff"
-                            android:textSize="13sp"/>
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Dapetin gratis VIP 1 hari dengan membagikan lagu"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp"/>
+                            </LinearLayout>
 
-                        <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="0dp"
-                            android:text="Tugas dan Hadiah"
-                            android:textColor="#f5761A"
-                            android:textSize="15sp"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:src="@drawable/panah"/>
+                        </LinearLayout>
 
-                        <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="wrap_content"
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingLeft="0dp"
-                            android:layout_marginBottom="10dp"
-                            android:text="Tugas dan Hadiah"
-                            android:textColor="#fff"
-                            android:textSize="13sp"/>
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="9">
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="0dp"
+                                    android:text="Bagikan Musik"
+                                    android:textColor="#f5761A"
+                                    android:textSize="15sp"/>
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Dapetin gratis VIP 1 hari dengan membagikan lagu"
+                                    android:textColor="#fff"
+                                    android:textSize="13sp"/>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:src="@drawable/panah"/>
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
