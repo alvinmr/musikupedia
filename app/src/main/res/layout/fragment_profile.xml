@@ -129,7 +129,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@drawable/ic_home"/>
+                        android:src="@drawable/diamond"/>
                     <TextView
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"
@@ -148,7 +148,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@drawable/ic_home"/>
+                        android:src="@drawable/coin"/>
                     <TextView
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"
@@ -175,7 +175,7 @@
                         <ImageView
                             android:layout_width="36dp"
                             android:layout_height="36dp"
-                            android:src="@drawable/icons_email"/>
+                            android:src="@drawable/gift"/>
                         <TextView
                             android:textStyle="bold"
                             android:layout_gravity="center_vertical"
@@ -248,7 +248,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@drawable/ic_home"/>
+                        android:src="@drawable/shirt"/>
                     <TextView
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"
@@ -266,7 +266,7 @@
                     <ImageView
                         android:layout_width="36dp"
                         android:layout_height="36dp"
-                        android:src="@drawable/ic_home"/>
+                        android:src="@drawable/write"/>
                     <TextView
                         android:textStyle="bold"
                         android:layout_gravity="center_vertical"
