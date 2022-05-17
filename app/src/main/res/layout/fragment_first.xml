@@ -31,7 +31,6 @@
             tools:layout_editor_absoluteX="16dp"
             android:textSize="20dp"/>
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
