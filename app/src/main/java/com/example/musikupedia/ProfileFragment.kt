@@ -5,13 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.musikupedia.adapter.AlbumAdapter
-import com.example.musikupedia.adapter.ArtisAdapter
-import com.example.musikupedia.adapter.ForYouAdapter
-import kotlinx.android.synthetic.main.fragment_first.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,25 +29,6 @@ class ProfileFragment : Fragment() {
         }
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        recyclerView.apply {
-            layoutManager = GridLayoutManager(activity, 2)
-            adapter = ForYouAdapter()
-            addItemDecoration(DividerItemDecoration(activity, GridLayoutManager.HORIZONTAL))
-        }
-
-        recyclerView2.apply {
-            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-            adapter = AlbumAdapter()
-            addItemDecoration(DividerItemDecoration(activity, LinearLayoutManager.VERTICAL))
-        }
-
-        recyclerView3.apply {
-            layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-            adapter = ArtisAdapter()
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -71,7 +45,7 @@ class ProfileFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ProfileFragment.
+         * @return A new instance of fragment SecondFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic

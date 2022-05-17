@@ -6,8 +6,6 @@
     tools:context=".ProfileFragment"
     android:orientation="vertical">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -136,6 +134,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
+                        android:textColor="@color/white"
                         android:text="Langganan dan Keuntungan" />
                 </LinearLayout>
 
@@ -155,6 +154,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
+                        android:textColor="@color/white"
                         android:text="Koin dan Pendapatan"/>
                 </LinearLayout>
 
@@ -295,6 +295,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
+                        android:textColor="@color/white"
                         android:text="Galeri Tema"/>
                 </LinearLayout>
                 <LinearLayout
@@ -313,6 +314,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
+                        android:textColor="@color/white"
                         android:text="Feedback" />
                 </LinearLayout>
                 <LinearLayout
@@ -331,6 +333,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
+                        android:textColor="@color/white"
                         android:text="Pengaturan" />
                 </LinearLayout>
 
