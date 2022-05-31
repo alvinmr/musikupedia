@@ -21,11 +21,11 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/roundstyle"
             android:backgroundTint="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@+id/mainTitleLibrary"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitleSearch"
             tools:layout_editor_absoluteX="24dp" />
 
         <TextView
-            android:id="@+id/mainTitleLibrary"
+            android:id="@+id/mainTitleSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="89dp"
@@ -40,7 +40,7 @@
             tools:layout_editor_absoluteX="16dp" />
 
         <TextView
-            android:id="@+id/mainTitleLibrary2"
+            android:id="@+id/mainTitleSearch2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mainTitleLibrary2" />
+            app:layout_constraintTop_toBottomOf="@+id/mainTitleSearch2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

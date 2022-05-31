@@ -22,7 +22,7 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recyclerView.apply {
+        recyclerViewSearch.apply {
             layoutManager = GridLayoutManager(activity, 2)
             adapter = ForYouAdapter()
             addItemDecoration(DividerItemDecoration(activity, GridLayoutManager.HORIZONTAL))
