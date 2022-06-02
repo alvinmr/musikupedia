@@ -9,27 +9,28 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
-        android:background=""
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@null"
         android:src="@drawable/ic_baseline_keyboard_backspace_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/albumplaymusic"
         android:layout_width="315dp"
         android:layout_height="265dp"
+        android:layout_marginTop="128dp"
         android:src="@drawable/album_justin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/judul_lagu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -40,26 +41,27 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/albumplaymusic" />
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-
         android:progress="50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/judul_lagu" />
 
     <ImageButton
+        android:id="@+id/play_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="trans"
+        android:layout_marginTop="32dp"
+        android:background="@null"
         android:src="@drawable/ic_baseline_play_circle_outline_24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 

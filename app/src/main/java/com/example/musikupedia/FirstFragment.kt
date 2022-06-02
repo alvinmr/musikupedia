@@ -25,13 +25,11 @@ class FirstFragment : Fragment() {
         recyclerViewSearch.apply {
             layoutManager = GridLayoutManager(activity, 2)
             adapter = ForYouAdapter()
-            addItemDecoration(DividerItemDecoration(activity, GridLayoutManager.HORIZONTAL))
         }
 
         recyclerView2.apply {
             layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
             adapter = AlbumAdapter()
-            addItemDecoration(DividerItemDecoration(activity, LinearLayoutManager.VERTICAL))
         }
 
         recyclerView3.apply {

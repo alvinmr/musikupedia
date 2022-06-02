@@ -35,7 +35,6 @@ class SecondFragment : Fragment() {
         recyclerViewSearch.apply {
             layoutManager = GridLayoutManager(activity, 2)
             adapter = SearchAdapter()
-            addItemDecoration(DividerItemDecoration(activity, GridLayoutManager.HORIZONTAL))
         }
     }
 
