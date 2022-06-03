@@ -22,7 +22,7 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recyclerViewSearch.apply {
+        recyclerView1.apply {
             layoutManager = GridLayoutManager(activity, 2)
             adapter = ForYouAdapter()
         }

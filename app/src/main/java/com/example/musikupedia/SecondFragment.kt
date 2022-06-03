@@ -5,12 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.musikupedia.adapter.AlbumAdapter
-import com.example.musikupedia.adapter.ArtisAdapter
 import com.example.musikupedia.adapter.ForYouAdapter
 import com.example.musikupedia.adapter.SearchAdapter
 import kotlinx.android.synthetic.main.fragment_first.*
@@ -32,7 +29,7 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        recyclerViewSearch.apply {
+        recyclerView1.apply {
             layoutManager = GridLayoutManager(activity, 2)
             adapter = SearchAdapter()
         }
