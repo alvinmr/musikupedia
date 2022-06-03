@@ -45,8 +45,6 @@ class YourLibrary : RecyclerView.Adapter<YourLibrary.ViewHolder>() {
         holder.cover.setOnClickListener{
             val context = holder.judul.context
             val intent = Intent( context, MusicActivity::class.java)
-//            val bundle = Bundle()
-//            bundle.putInt("cover", cover[position])
 
             intent.putExtra("judul", judul[position])
             intent.putExtra("penyayi", descriptionLibrary[position])
@@ -60,4 +58,5 @@ class YourLibrary : RecyclerView.Adapter<YourLibrary.ViewHolder>() {
     override fun getItemCount(): Int {
         return judul.count()
     }
+
 }

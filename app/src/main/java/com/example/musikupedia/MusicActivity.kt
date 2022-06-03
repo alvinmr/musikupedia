@@ -35,6 +35,8 @@ class MusicActivity : AppCompatActivity() {
             musicvalue = bundle.getInt("music")
         }
         mediaPlayer = MediaPlayer.create(this, musicvalue)
+        mediaPlayer.start()
+        play_btn.setImageResource(R.drawable.ic_baseline_pause_circle_outline_24)
 
         albumplaymusic.setImageResource(imagevalue)
 
