@@ -18,7 +18,7 @@ class ArtisAdapter : RecyclerView.Adapter<ArtisAdapter.ViewHolder>() {
         var cover: ImageView
 
         init {
-            judul = itemView.findViewById(R.id.titleCover)
+            judul = itemView.findViewById(R.id.titleCoverAlbum)
             cover = itemView.findViewById(R.id.albumcover3)
         }
     }
