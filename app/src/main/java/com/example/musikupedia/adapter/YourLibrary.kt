@@ -1,5 +1,6 @@
 package com.example.musikupedia.adapter
 
+import android.content.Intent
 import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
@@ -7,13 +8,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.musikupedia.MusicActivity
 import com.example.musikupedia.R
 
 class YourLibrary : RecyclerView.Adapter<YourLibrary.ViewHolder>() {
 
-    private val judul = arrayOf("Playlist name 1", "Playlist name 2", "Playlist name 3", "Playlist name 4", "Playlist name 5", "Playlist name 6", "Playlist name 7", "Playlist name 8")
-    private val descriptionLibrary = arrayOf("Lagu tentang ...", "Lagu ini tentang", "", "Lagunya enak", "Lagu tentang ...", "Lagu ini tentang", "", "Lagunya enak")
-    private val cover = arrayOf(R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin)
+    private val judul = arrayOf("34+5", "Pov", "West Side", "Blu & Grey", "Dis-ease", "Dynamite", "Your Power", "Getting Older", "Oxytocin", "Bubble Gum", "Demam Unyu", "#Eeeaa", "18", "Night Changes", "Steal My Girl")
+    private val descriptionLibrary = arrayOf("Ariana Grande", "Ariana Grande", "Ariana Grande", "BTS", "BTS", "BTS", "Billie Ellish", "Billie Ellish", "Billie Ellish", "Coboy Junior", "Coboy Junior", "Coboy Junior", "One Direction", "One Direction", "One Direction")
+    private val cover = arrayOf(R.drawable.cover_postitions, R.drawable.cover_postitions, R.drawable.cover_postitions, R.drawable.cover_be, R.drawable.cover_be, R.drawable.cover_be, R.drawable.cover_happierthanever, R.drawable.cover_happierthanever, R.drawable.cover_happierthanever, R.drawable.cover_coboyjunior, R.drawable.cover_coboyjunior, R.drawable.cover_coboyjunior, R.drawable.cover_four, R.drawable.cover_four, R.drawable.cover_four)
+    private val music = arrayOf(R.raw.ariana_3435, R.raw.ariana_pov, R.raw.ariana_westside, R.raw.be_bluegrey, R.raw.be_disease, R.raw.be_dynamite, R.raw.bellie_yourpower, R.raw.billie_gettingolder, R.raw.billie_oxytocin, R.raw.cjr_bubblegum, R.raw.cjr_demamunyuunyu, R.raw.cjr_eeeaaa, R.raw.wandi_18, R.raw.wandi_nightchanges, R.raw.wandi_stealmygirl)
 
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -38,6 +41,20 @@ class YourLibrary : RecyclerView.Adapter<YourLibrary.ViewHolder>() {
         holder.judul.text = judul[position]
         holder.descriptionLibrary.text = descriptionLibrary[position]
         holder.cover.setImageResource(cover[position])
+
+        holder.cover.setOnClickListener{
+            val context = holder.judul.context
+            val intent = Intent( context, MusicActivity::class.java)
+//            val bundle = Bundle()
+//            bundle.putInt("cover", cover[position])
+
+            intent.putExtra("judul", judul[position])
+            intent.putExtra("penyayi", descriptionLibrary[position])
+            intent.putExtra("cover", cover[position])
+            intent.putExtra("music", music[position])
+
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {

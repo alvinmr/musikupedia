@@ -14,10 +14,10 @@ import com.example.musikupedia.R
 
 class ForYouAdapter : RecyclerView.Adapter<ForYouAdapter.ViewHolder>() {
 
-    private val judul = arrayOf("Judul 1", "Judul 2", "Judul 3", "Judul 4")
-    private val penyayi = arrayOf("Taylor Swift", "Justin", "BTS", "Ed Sheeran")
-    private val cover = arrayOf(R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.backgroundprofile)
-    private val music = arrayOf(R.raw.money, R.raw.money, R.raw.money, R.raw.money)
+    private val judul = arrayOf("Blu & Grey", "34 + 35", "18", "Demam Unyu")
+    private val penyayi = arrayOf("BTS", "Ariana Grande", "One Direction", "Coboy Junior")
+    private val cover = arrayOf(R.drawable.cover_be, R.drawable.cover_postitions, R.drawable.cover_four, R.drawable.cover_coboyjunior)
+    private val music = arrayOf(R.raw.be_bluegrey, R.raw.ariana_3435, R.raw.wandi_18, R.raw.cjr_demamunyuunyu)
 
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -50,6 +50,7 @@ class ForYouAdapter : RecyclerView.Adapter<ForYouAdapter.ViewHolder>() {
 //            bundle.putInt("cover", cover[position])
 
             intent.putExtra("judul", judul[position])
+            intent.putExtra("penyayi", penyayi[position])
             intent.putExtra("cover", cover[position])
             intent.putExtra("music", music[position])
 

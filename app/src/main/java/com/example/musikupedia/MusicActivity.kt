@@ -1,5 +1,7 @@
 package com.example.musikupedia
 
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
@@ -8,14 +10,22 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_music.*
 
 class MusicActivity : AppCompatActivity() {
-    lateinit var runnable: Runnable
+    private lateinit var runnable: Runnable
     private var handler = Handler()
+    private lateinit var mediaPlayer : MediaPlayer
+
+    override fun onBackPressed() {
+        mediaPlayer.stop()
+        super.onBackPressed()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_music)
 
+
         judul_lagu.text = intent.getStringExtra("judul")
+        artist.text = intent.getStringExtra("penyayi")
         val bundle = intent.extras
         var imagevalue = 0
         var musicvalue = 0
@@ -24,9 +34,10 @@ class MusicActivity : AppCompatActivity() {
             imagevalue = bundle.getInt("cover")
             musicvalue = bundle.getInt("music")
         }
+        mediaPlayer = MediaPlayer.create(this, musicvalue)
+
         albumplaymusic.setImageResource(imagevalue)
 
-        val mediaPlayer : MediaPlayer = MediaPlayer.create(this, musicvalue)
 
         seekBar.progress = 0
         seekBar.max = mediaPlayer.duration
