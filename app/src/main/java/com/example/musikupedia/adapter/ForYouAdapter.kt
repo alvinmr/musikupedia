@@ -54,7 +54,6 @@ class ForYouAdapter : RecyclerView.Adapter<ForYouAdapter.ViewHolder>() {
             intent.putExtra("music", music[position])
 
             context.startActivity(intent)
-
         }
     }
 
