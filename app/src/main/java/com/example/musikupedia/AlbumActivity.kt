@@ -21,7 +21,6 @@ class AlbumActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_album)
 
-
         recyclerViewAlbum.apply{
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             var musicvalue = intent.getIntegerArrayListExtra("music")

@@ -58,4 +58,5 @@ class YourLibrary : RecyclerView.Adapter<YourLibrary.ViewHolder>() {
     override fun getItemCount(): Int {
         return judul.count()
     }
+
 }
