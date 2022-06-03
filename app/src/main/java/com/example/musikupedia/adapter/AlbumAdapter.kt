@@ -12,9 +12,17 @@ import com.example.musikupedia.R
 
 class AlbumAdapter : RecyclerView.Adapter<AlbumAdapter.ViewHolder>() {
 
-    private val judulAlbum = arrayOf("test", "Judul 2", "Judul 3", "Judul 4")
-    private val penyayi = arrayOf("Taylor Swift", "Justin", "BTS", "Ed Sheeran")
-    private val cover = arrayOf(R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin)
+    private val judulAlbum = arrayOf("Positions", "BE", "Happier Than Ever", "Coboy Junior", "Four")
+    private val penyayi = arrayOf("Ariana Grande", "BTS", "Billie Eilish", "Coboy Junior", "One Direction")
+    private val cover = arrayOf(R.drawable.cover_postitions, R.drawable.cover_be, R.drawable.cover_happierthanever, R.drawable.cover_coboyjunior, R.drawable.cover_four)
+    private val music = arrayListOf(
+        arrayListOf(R.raw.ariana_3435, R.raw.ariana_pov, R.raw.ariana_westside),
+        arrayListOf(R.raw.be_bluegrey, R.raw.be_disease, R.raw.be_dynamite),
+        arrayListOf(R.raw.bellie_yourpower, R.raw.billie_gettingolder, R.raw.billie_oxytocin),
+        arrayListOf(R.raw.cjr_bubblegum, R.raw.cjr_demamunyuunyu, R.raw.cjr_eeeaaa),
+        arrayListOf(R.raw.wandi_18, R.raw.wandi_nightchanges, R.raw.wandi_stealmygirl)
+    )
+
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var judulAlbum: TextView
@@ -42,6 +50,9 @@ class AlbumAdapter : RecyclerView.Adapter<AlbumAdapter.ViewHolder>() {
         holder.cover.setOnClickListener{
             val context = holder.judulAlbum.context
             val intent = Intent( context, AlbumActivity::class.java)
+
+            intent.putExtra("music", music[position])
+
 
             context.startActivity(intent)
         }
