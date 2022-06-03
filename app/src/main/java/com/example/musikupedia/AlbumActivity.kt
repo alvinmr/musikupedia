@@ -24,10 +24,20 @@ class AlbumActivity : AppCompatActivity() {
         recyclerViewAlbum.apply{
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             var musicvalue = intent.getIntegerArrayListExtra("music")
-//            judulLibrary.text = intent.getStringExtra("judulAlbum")
-//            descriptionLibrary.text = intent.getStringExtra("penyayi")
+            var coverList = intent.getIntegerArrayListExtra("coverList")
+            var penyayiList = intent.getStringArrayListExtra("penyayiList")
+            var judulList = intent.getStringArrayListExtra("judulList")
+            albumtitle.text = intent.getStringExtra("judul")
+            albumsinger.text = intent.getStringExtra("penyayi")
+            val bundle = intent.extras
+            var imagevalue = 0
 
-            adapter = IsiAlbum(musicvalue)
+            if (bundle != null) {
+                imagevalue = bundle.getInt("cover")
+            }
+            album_isi.setImageResource(intent.getIntExtra("cover", 0))
+
+            adapter = IsiAlbum(musicvalue, coverList, penyayiList, judulList)
         }
 
 

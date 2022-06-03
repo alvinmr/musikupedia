@@ -15,6 +15,7 @@ class AlbumAdapter : RecyclerView.Adapter<AlbumAdapter.ViewHolder>() {
     private val judulAlbum = arrayOf("Positions", "BE", "Happier Than Ever", "Coboy Junior", "Four")
     private val penyayi = arrayOf("Ariana Grande", "BTS", "Billie Eilish", "Coboy Junior", "One Direction")
     private val cover = arrayOf(R.drawable.cover_postitions, R.drawable.cover_be, R.drawable.cover_happierthanever, R.drawable.cover_coboyjunior, R.drawable.cover_four)
+
     private val music = arrayListOf(
         arrayListOf(R.raw.ariana_3435, R.raw.ariana_pov, R.raw.ariana_westside),
         arrayListOf(R.raw.be_bluegrey, R.raw.be_disease, R.raw.be_dynamite),
@@ -22,6 +23,28 @@ class AlbumAdapter : RecyclerView.Adapter<AlbumAdapter.ViewHolder>() {
         arrayListOf(R.raw.cjr_bubblegum, R.raw.cjr_demamunyuunyu, R.raw.cjr_eeeaaa),
         arrayListOf(R.raw.wandi_18, R.raw.wandi_nightchanges, R.raw.wandi_stealmygirl)
     )
+    private val coverList = arrayListOf(
+        arrayListOf(R.drawable.cover_postitions, R.drawable.cover_postitions, R.drawable.cover_postitions),
+        arrayListOf(R.drawable.cover_be, R.drawable.cover_be, R.drawable.cover_be),
+        arrayListOf(R.drawable.cover_happierthanever, R.drawable.cover_happierthanever, R.drawable.cover_happierthanever),
+        arrayListOf(R.drawable.cover_coboyjunior, R.drawable.cover_coboyjunior, R.drawable.cover_coboyjunior),
+        arrayListOf(R.drawable.cover_four, R.drawable.cover_four, R.drawable.cover_four),
+    )
+    val penyayiList = arrayListOf(
+        arrayListOf("Ariana Grande", "Ariana Grande","Ariana Grande"),
+        arrayListOf("BTS", "BTS", "BTS"),
+        arrayListOf("Billie Ellish", "Billie Ellish","Billie Ellish"),
+        arrayListOf("Coboy Junior", "Coboy Junior","Coboy Junior"),
+        arrayListOf("One Direction", "One Direction","One Direction"),
+    )
+    val judulList = arrayListOf(
+        arrayListOf("34+5", "Pov","West Side"),
+        arrayListOf("Blue & Grey", "Dis-ease", "Dynamite"),
+        arrayListOf("Your Power", "Getting Older","Oxytocin"),
+        arrayListOf("Bubble GUm", "Demam Unyu Unyu","#Eeeaaa"),
+        arrayListOf("18", "Night Changes","Steal My Girl"),
+    )
+
 
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -51,7 +74,13 @@ class AlbumAdapter : RecyclerView.Adapter<AlbumAdapter.ViewHolder>() {
             val context = holder.judulAlbum.context
             val intent = Intent( context, AlbumActivity::class.java)
 
+            intent.putExtra("judul", judulAlbum[position])
+            intent.putExtra("penyayi", penyayi[position])
+            intent.putExtra("cover", cover[position])
             intent.putExtra("music", music[position])
+            intent.putExtra("coverList", coverList[position])
+            intent.putExtra("penyayiList", penyayiList[position])
+            intent.putExtra("judulList", judulList[position])
 
 
             context.startActivity(intent)

@@ -10,8 +10,8 @@ import com.example.musikupedia.R
 
 class ArtisAdapter : RecyclerView.Adapter<ArtisAdapter.ViewHolder>() {
 
-    private val judul = arrayOf("Artis 1", "Artis 2", "Artis 3", "Artis 4")
-    private val cover = arrayOf(R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin)
+    private val judul = arrayOf("Ariana Grande", "BTS", "One Direction", "Billie Ellish", "Coboy Junior")
+    private val cover = arrayOf(R.drawable.profile_ariana, R.drawable.profile_bts, R.drawable.profile_1d, R.drawable.profile_billie, R.drawable.profile_cjr)
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var judul: TextView

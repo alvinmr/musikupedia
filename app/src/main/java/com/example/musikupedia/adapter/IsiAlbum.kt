@@ -12,11 +12,11 @@ import com.example.musikupedia.MusicActivity
 import com.example.musikupedia.R
 import java.util.ArrayList
 
-class IsiAlbum(val music : ArrayList<Int>?) : RecyclerView.Adapter<IsiAlbum.ViewHolder>() {
+class IsiAlbum(val music : ArrayList<Int>?, val coverList : ArrayList<Int>?, val penyayiList : ArrayList<String>?,  val judulList : ArrayList<String>?) : RecyclerView.Adapter<IsiAlbum.ViewHolder>() {
 
-    private val judul = arrayOf("Playlist name 1", "Playlist name 2", "Playlist name 3")
-    private val descriptionLibrary = arrayOf("Lagu tentang ...", "Lagu ini tentang", "", "Lagunya enak")
-    private val cover = arrayOf(R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin)
+//    private val judul = arrayOf("Playlist name 1", "Playlist name 2", "Playlist name 3")
+//    private val descriptionLibrary = arrayOf("Lagu tentang ...", "Lagu ini tentang", "", "Lagunya enak")
+//    private val cover = arrayOf(R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin, R.drawable.album_justin)
 
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -38,17 +38,17 @@ class IsiAlbum(val music : ArrayList<Int>?) : RecyclerView.Adapter<IsiAlbum.View
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.judul.text = judul[position]
-        holder.descriptionLibrary.text = descriptionLibrary[position]
-        holder.cover.setImageResource(cover[position])
+        holder.judul.text = judulList!![position]
+        holder.descriptionLibrary.text = penyayiList!![position]
+        holder.cover.setImageResource(coverList!![position])
 
         holder.cover.setOnClickListener{
             val context = holder.judul.context
             val intent = Intent( context, MusicActivity::class.java)
 
-            intent.putExtra("judul", judul[position])
-            intent.putExtra("penyayi", descriptionLibrary[position])
-            intent.putExtra("cover", cover[position])
+            intent.putExtra("judul", judulList!![position])
+            intent.putExtra("penyayi", penyayiList!![position])
+            intent.putExtra("cover", coverList!![position])
             intent.putExtra("music", music!![position])
 
             context.startActivity(intent)
@@ -56,6 +56,6 @@ class IsiAlbum(val music : ArrayList<Int>?) : RecyclerView.Adapter<IsiAlbum.View
     }
 
     override fun getItemCount(): Int {
-        return judul.count()
+        return coverList!!.count()
     }
 }

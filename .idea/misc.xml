@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/drawable/ic_baseline_pause_circle_outline_24.xml" value="0.248" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/drawable/ic_baseline_play_circle_outline_24.xml" value="0.2265" />
+        <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/activity_album.xml" value="0.264" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/activity_music.xml" value="0.264" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/fragment_second.xml" value="0.21829710144927536" />
+        <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/fragment_third.xml" value="0.25" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/listitem_album.xml" value="0.6" />
+        <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/listitem_isi_album.xml" value="0.1" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/listitem_library.xml" value="0.25" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia-ng/app/src/main/res/layout/listitem_search.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/maula/Documents/Development/musikupedia/app/src/main/res/font/open_sans_bold.xml" value="0.14010416666666667" />
@@ -42,8 +45,6 @@
         <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/gradient_background.xml" value="0.19972826086956522" />
         <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/listitem_album.xml" value="0.5" />
         <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/listitem_album_populer.xml" value="0.75" />
-        <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/listitem_artis_populer.xml" value="0.33" />
-        <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/listitem_isi_album.xml" value="0.2164855072463768" />
         <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/listitem_artis_populer.xml" value="0.1" />
         <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/listitem_library.xml" value="0.5" />
         <entry key="..\:/android studio/musikupedia/app/src/main/res/layout/listitem_search.xml" value="0.9" />

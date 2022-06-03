@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/album_isi"
         android:layout_width="277dp"
         android:layout_height="277dp"
         android:layout_marginTop="44dp"
@@ -23,7 +23,7 @@
         android:layout_height="400dp"
         android:layout_marginTop="30dp"
         android:paddingHorizontal="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/album_isi"
         tools:layout_editor_absoluteX="36dp">
 
         <ScrollView
@@ -39,7 +39,7 @@
         </ScrollView>
 
         <TextView
-            android:id="@+id/mainTitle"
+            android:id="@+id/albumtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_bold"
@@ -53,7 +53,7 @@
             tools:layout_editor_absoluteX="24dp" />
 
         <TextView
-            android:id="@+id/singer"
+            android:id="@+id/albumsinger"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -62,7 +62,7 @@
             android:textColor="@color/white"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mainTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/albumtitle" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
@@ -71,7 +71,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/singer" />
+            app:layout_constraintTop_toBottomOf="@+id/albumsinger" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
