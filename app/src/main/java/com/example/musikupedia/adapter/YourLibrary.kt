@@ -1,7 +1,6 @@
 package com.example.musikupedia.adapter
 
 import android.content.Intent
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,14 +22,12 @@ class YourLibrary : RecyclerView.Adapter<YourLibrary.ViewHolder>() {
         var judul: TextView
         var descriptionLibrary: TextView
         var cover: ImageView
-
         init {
             judul = itemView.findViewById(R.id.judulLibrary)
             descriptionLibrary = itemView.findViewById(R.id.descriptionLibrary)
             cover = itemView.findViewById(R.id.albumcoverLibrary)
         }
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
             .inflate(R.layout.listitem_library, parent, false)
@@ -42,7 +39,7 @@ class YourLibrary : RecyclerView.Adapter<YourLibrary.ViewHolder>() {
         holder.descriptionLibrary.text = descriptionLibrary[position]
         holder.cover.setImageResource(cover[position])
 
-        holder.cover.setOnClickListener{
+        holder.itemView.setOnClickListener{
             val context = holder.judul.context
             val intent = Intent( context, MusicActivity::class.java)
 

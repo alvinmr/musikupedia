@@ -59,13 +59,13 @@ class AlbumAdapter : RecyclerView.Adapter<AlbumAdapter.ViewHolder>() {
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlbumAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
             .inflate(R.layout.listitem_album_populer, parent, false)
-        return AlbumAdapter.ViewHolder(v)
+        return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: AlbumAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.judulAlbum.text = judulAlbum[position]
         holder.penyayi.text = penyayi[position]
         holder.cover.setImageResource(cover[position])

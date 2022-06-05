@@ -42,7 +42,7 @@ class IsiAlbum(val music : ArrayList<Int>?, val coverList : ArrayList<Int>?, val
         holder.descriptionLibrary.text = penyayiList!![position]
         holder.cover.setImageResource(coverList!![position])
 
-        holder.cover.setOnClickListener{
+        holder.itemView.setOnClickListener{
             val context = holder.judul.context
             val intent = Intent( context, MusicActivity::class.java)
 
